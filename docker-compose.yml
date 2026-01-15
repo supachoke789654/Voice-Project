@@ -1,0 +1,22 @@
+services:
+  backend:
+    build: ./backend
+    container_name: voice-backend
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    volumes:
+      - ./backend:/app
+    restart: always
+
+  frontend:
+    build: ./frontend/voice_assitant
+    container_name: voice-frontend
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
+
+
+

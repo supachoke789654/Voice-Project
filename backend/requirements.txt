@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+openai
+langgraph
+faiss-cpu
+python-dotenv
+pydantic
+tqdm
+langchain>=0.2.9
+langchain-core>=0.2.22
+langchain-openai>=0.1.12
+langchain-community>=0.2.9
+langchain-classic
